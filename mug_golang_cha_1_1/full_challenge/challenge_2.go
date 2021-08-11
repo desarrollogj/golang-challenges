@@ -1,3 +1,7 @@
+/*Package main provides Reverses functions.
+-------------------------------[ go test -cpu=4 -bench=. ]--------------------------------
+Run that command to validate the performance of each function.
+*/
 package main
 
 import (
