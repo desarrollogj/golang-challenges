@@ -6,11 +6,11 @@ import (
 )
 
 func main() {
-	fmt.Println(Reverse("Join the Navy"))
 	fmt.Println(Reverse2("Join the Navy"))
+	fmt.Println(ReverseVariant2("Join the Navy"))
 }
 
-func Reverse(input string) string {
+func Reverse2(input string) string {
 	output := ""
 	for i := len(input) - 1; i >= 0; i = i - 1 {
 		output += string(input[i])
@@ -18,7 +18,7 @@ func Reverse(input string) string {
 	return output
 }
 
-func Reverse2(s string) string {
+func ReverseVariant2(s string) string {
 	reversed := make([]rune, utf8.RuneCountInString(s))
 	topIndex := len(s) - 1
 
